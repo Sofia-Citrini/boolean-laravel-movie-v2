@@ -13,6 +13,7 @@
         <th>genere</th>
         <th>cover</th>
         <th>descrizione</th>
+
       </tr>
     </thead>
     <tbody>
@@ -30,7 +31,7 @@
               <form action="{{route('admin.projects.destroy', $movie->id)}}" method="POST">
                 @csrf()
                 @method('delete')
-                <button class="btn btn-danger">D</button>
+                <button class="btn btn-danger">De</button>
               </form>
             </div>
             
