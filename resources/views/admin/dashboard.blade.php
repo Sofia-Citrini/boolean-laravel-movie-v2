@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <div class="d-flex justify-content-between mt-3 align-items-end">
+                        Since you are logged in, look for the index
+                        <a class="text-decoration-none text-black" href="{{route('admin.movies.index')}}"><button class="btn btn-primary">Index</button></a>
+                    </div>
                 </div>
             </div>
         </div>
