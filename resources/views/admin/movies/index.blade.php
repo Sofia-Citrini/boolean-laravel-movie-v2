@@ -26,12 +26,12 @@
           
           <td>
             <div class="d-flex gap-2 ">
-              <a href="{{ route('admin.movies.edit', $movie->id) }}" class="btn btn-primary">E</a>
-              <a href="{{ route('admin.movies.show', $movie->id) }}" class="btn btn-info">S</a>
-              <form action="{{route('admin.projects.destroy', $movie->id)}}" method="POST">
+              <a href="{{ route('admin.movies.edit', $movie->id) }}" class="btn btn-primary"><i class="fa-solid fa-pencil"></i></a>
+              <a href="{{ route('admin.movies.show', $movie->id) }}" class="btn btn-info"><i class="fas fa-eye"></i></a>
+              <form action="{{route('admin.movies.destroy', $movie->id)}}" method="POST">
                 @csrf()
                 @method('delete')
-                <button class="btn btn-danger">De</button>
+                <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
               </form>
             </div>
             
