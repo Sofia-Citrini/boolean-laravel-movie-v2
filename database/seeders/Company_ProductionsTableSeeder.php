@@ -14,6 +14,6 @@ class Company_ProductionsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }
