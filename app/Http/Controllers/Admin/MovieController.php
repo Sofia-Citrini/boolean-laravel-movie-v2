@@ -39,7 +39,7 @@ class MovieController extends Controller
     {
         $data = $request->all();
         $movie = Movie::create($data);
-        return redirect()->route('admin.movies.show', $movie->id);
+        return redirect()->route('admin.movies.index', $movie->id);
     }
 
     /**
