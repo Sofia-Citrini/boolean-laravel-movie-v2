@@ -12,4 +12,8 @@ class Movie extends Model
     protected $fillable = [
         'cover_img', 'title', 'description'
     ];
+
+    public function actors() {
+        return $this->belongsToMany(Actor::class);
+    }
 }
