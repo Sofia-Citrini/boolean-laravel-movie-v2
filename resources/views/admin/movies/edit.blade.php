@@ -3,7 +3,7 @@
 @section('content')
 <div>
     <div class="text-center pt-2 mt-4">
-        <h1 class="text-dark">AGGIUNGI NUOVO FILM</h1>
+        <h1 class="text-dark">MODIFICA FILM</h1>
     </div>
     {{-- Validazione Dati --}}
     @if($errors->any())
